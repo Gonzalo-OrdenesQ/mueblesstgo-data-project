@@ -21,3 +21,11 @@ spring:
           uri: lb://employee-service
           predicates:
             - Path=/employee/**
+        - id: authorization-service
+          uri: lb://authorization-service
+          predicates:
+            - Path=/authorization/**
+        - id: datetime-service
+          uri: lb://datetime-service
+          prdicates:
+            - Path=/datetime/**
